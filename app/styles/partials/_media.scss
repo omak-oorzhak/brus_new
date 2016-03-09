@@ -1,0 +1,34 @@
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header, .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/*HAMBURGER*/
+@media only screen and (min-width: 481px){
+  .hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  .hamburger {
+    width: 100%;
+    display: block;
+  }
+  .nav {
+    li {
+      width: 100%;
+    }
+    &-list {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s linear;
+    }
+  }
+  .slide-down {
+    height: 273px;
+  }
+}
